@@ -16,6 +16,8 @@
 
 	<!-- Animation Css -->
 	<link rel="stylesheet" href="css/animate.css">
+	<!-- search bar -->
+	<link rel = ”stylesheet” href = ”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
 
 
 </head>
@@ -24,37 +26,47 @@
 
 <div class="header-div">
 
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header logo-div bounceInLeft wow" data-wow-duration="2s">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Guia de Marília</a>
-    </div>
-    <div class="collapse navbar-collapse top-right-menu-ul bounceInRight wow" id="bs-example-navbar-collapse-1" data-wow-duration="4s">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#About">O Guia</a></li>
-        <li><a href="#catalog">Catálogo Online</a></li>
-        <li><a href="#Testimonial">Contato</a></li>
-      </ul>
+	
+	<header tabindex="0">Header</header>
+	<div id="nav-container">
+	  <div class="bg"></div>
+	  <div class="button" tabindex="0">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </div>
+	  <div id="nav-content" tabindex="0">
+		<ul>
+		  <li><a href="#0">Home</a></li>
+		  <li><a href="#0">Services</a></li>
+		  <li><a href="#0">Blog</a></li>
+		  <li><a href="#0">About</a></li>
+		  <li><a href="#0">Contact</a></li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+
+    
     </div><!-- End navbar-collapse -->
   </div><!-- End container -->
 </nav>
 
+
 <div class="container wow bounceInDown" data-wow-duration="5s">
 	<div class="row">
-		<div class="col-md-offset-2 col-md-8 text-center slide-text">
-			<img src="../matheus-site/favicon.png" alt="">
-			<h1>Ola!</h1>
+		<div class="col-md-offset-2 col-md-8 text-center 	">
+			<img id="inicio" src="../matheus-site/favicon.png" alt="">
+			<div class="main">
+			<h1>Olá!</h1>
 			<h1>Que bom que nos achou.</h1>
 			<h1>Nós somo o Guia de Marília!</h1>
-		</div><!-- End col-md-8-->
+			</div>
 			<img class="logo-guia" src="../matheus-site/logo.png" alt="">
+		</div><!-- End col-md-8-->
+			
 		<div class="col-md-offset-2"></div><!-- End col-md-offset-2 -->
+	
 	</div><!-- End Row -->
 </div><!-- End Contanier -->
 
@@ -66,6 +78,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="main_heading">
+				<div class="main">
 				<h1>Sobre Nós</h1>
 				<div  class="text-center"><span class="underline"></span></div>
 			</div>
@@ -100,8 +113,82 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="main_heading">
-				<h1>Catalogo Online</h1>
-				<div  class="text-center"><span class="underline"></span></div>
+				<h1>Catálogo Online</h1>
+				
+				<h1 class="vazio"></h1>
+				<div class="wrap">
+					<div class="search">
+					   <input id="searchbar" type="text" class="searchTerm"  onkeyup="search_catalog()" placeholder="Por qual serviço procura?">
+					   <button type="submit" class="searchButton">
+						 <i class="fa fa-search"></i>
+					  </button>
+					</div>
+				 </div>
+				
+			
+		
+					<!-- ordered list -->
+					<ol id='list'>
+						<div id="scroll">
+						
+						<li class="catalog">
+							<div class="box">
+							<p class="academia">
+								<strong> Academia 1</strong><br>
+								Rua. Antonio Prado, 1555<br>
+								Horário de funcionamento<br>
+								Seg a Sex, 9:00 às 18:00<br>
+								Tel: (14) xxxxx-xxxx
+							</p>			
+							<p class="academia">
+								<strong>Academia 2</strong><br>
+								Rua Juvenal Fonseca,4533<br>
+								Horário de funcionamento<br>
+								Seg a Sex, 9:00 às 18:00<br>
+								Tel: (14) xxxxx-xxxx
+							</p>
+							<p class="academia">
+								<strong>Academia 3</strong><br>
+								Rua Sigismundo, 514<br>
+								Horário de funcionamento<br>
+								Seg a Sex, 9:00 às 18:00<br>
+								Tel: (14) xxxxx-xxxx</p>
+						
+						</div>
+						</li> 
+						<li class="catalog">
+							<div class="box">
+								<p class="academia">
+									Exemplo1<br> -xxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxx<br>
+								</p>
+								<p class="academia">Exemplo3<br> -xxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxx<br>
+								</p>
+								<p class="academia">Exemplo2<br> -xxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxx<br>
+								</p>
+								<p class="academia">Exemplo1<br> -xxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxx<br>
+								</p>
+								<p class="academia">Exemplo3<br> -xxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxx<br>
+								</p>
+								<p class="academia">Exemplo2<br> -xxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxxxxx<br>
+									xxxxxxxxxxxxxxxxx<br>
+								</p>
+							
+	
+						</div>
+
+						</li> 
+				
 			</div>
 		</div><!-- End col-md-12 -->
 	</div><!-- End row -->
@@ -126,7 +213,7 @@
 			<p><strong>Gostaria de nos conhecer melhor,</strong></p>
 			<p><strong>tirar suas dúvidas
 			e fazer parte da equipe do Guia de Marília?</strong></p>
-			<p><strong>Entre em contato com o nosso Whatsaapp,</strong></p>
+			<p><strong>Entre em contato com o nosso Whatsapp,</strong></p>
 			<p><strong>e nos siga na rede social! </strong></p>
 		</div><!-- End col-md-12-->
 
@@ -141,25 +228,29 @@
     	<div class="row">
             <div class="col-sm-12 footer-social">           	
             	<a href="https://www.instagram.com/oguiademarilia/"><i class="fa fa-instagram"></i></a>
+				
 				<div class="whatsapp-fixo">
 					<a href="https://api.whatsapp.com/send?phone=14 99888-0568">
 					<img src="../matheus-site/iconfinder_social-whatsapp-circle_4017334.png" width="64px" height="64px" alt="Fale Conosco pelo WhatsApp"/> 
 					</a>
 					</div>
-            </div>
+				
+            </div> 
+			<div class="assinatura"> Copyright © 2021 | Site desenvolvido por: <a class="nome" href="https://github.com/joaop-carvalho"><b>João Pedro de Carvalho</b></a></div>
         </div>
         <div class="row">
             
         </div>
     </div>
 </footer>
-<!-- End Footer -->
+<!-- End Footer -->		
 
 
 <script type="text/javascript" src="js/jquery-main.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="js/wow.min.js"></script>
-
+<script src="../matheus-site/js/search.js"></script>
+<script src="../matheus-site/js/menu.js"></script>
 <script>
 	new WOW().init();
 </script>
