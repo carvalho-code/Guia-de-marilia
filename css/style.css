@@ -2,9 +2,14 @@
 /* Typography CSS */
 
 body
-{
+{   
+    
 	font-family: 'Roboto' !important;
 	overflow-x: hidden;
+}
+
+p {
+    color: rgb(78, 78, 78);
 }
 
 .main_heading {
@@ -12,7 +17,8 @@ body
 }
 
 .main_heading h1
-{
+{   position: relative;
+    top: -0.3rem;
 	font-size: 20px;
     font-weight: 300;
     text-align: center;
@@ -23,6 +29,8 @@ body
 .underline
 {
     display: inline-block;
+    position: relative;
+    top: -4rem;
     width: 160px;   
     height: 2px;
     background-color: #bd3639;
@@ -36,6 +44,7 @@ body
 
 
 .navbar {
+  box-shadow: 5px 5px 10px rgb(184, 184, 184);
   overflow: hidden;
   background-color: #bd3639;
   position: fixed; /* Set the navbar to fixed position */
@@ -61,7 +70,7 @@ body
 
 /* Main content */
 .main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  margin-top: 40px; /* Add a top margin to avoid content overlay */
 }
 
 .header-div
@@ -78,7 +87,7 @@ body
 
 .text-center {
   position: relative;
-  top: 2rem;
+  top: 3.9rem;
 }
 
 
@@ -126,6 +135,7 @@ body
 /* contact */
 
 
+
 .contact-color {
     position: relative;
     left: -1rem;
@@ -160,7 +170,8 @@ body
 
 /* About */
 
-.text-about {
+.text-about p {
+    color: rgb(78, 78, 78);
     text-align: center;
     font-size: 25px;
     line-height: 1.6;
@@ -224,7 +235,7 @@ body
   }
   
   .searchTerm:focus{
-    color: #bd3639;
+    color: #383838;
   }
   
   .searchButton {
@@ -525,7 +536,9 @@ body
 
 /* Contact */
 
+.text-contact {
 
+}
 
 .contact-color {
       font-size: 45px;
